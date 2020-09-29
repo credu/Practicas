@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.exe
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.deps.json
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.runtimeconfig.json
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.runtimeconfig.dev.json
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.dll
+C:\Users\User\source\repos\EstructuraSwitch\bin\Debug\netcoreapp3.1\EstructuraSwitch.pdb
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.csprojAssemblyReference.cache
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.AssemblyInfo.cs
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.dll
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.pdb
+C:\Users\User\source\repos\EstructuraSwitch\obj\Debug\netcoreapp3.1\EstructuraSwitch.genruntimeconfig.cache
