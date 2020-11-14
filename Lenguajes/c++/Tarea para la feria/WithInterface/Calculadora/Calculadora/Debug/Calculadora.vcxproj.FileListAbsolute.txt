@@ -1,0 +1,2 @@
+C:\Users\user\source\repos\Calculadora\Calculadora\Debug\Calculadora.Main.resources
+C:\Users\user\source\repos\Calculadora\Calculadora\Debug\Calculadora.vcxproj.GenerateResource.cache

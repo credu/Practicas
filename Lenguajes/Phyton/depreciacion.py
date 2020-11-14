@@ -38,11 +38,14 @@ while(finish):
 
     if(pause):
         sucess = n1/vidaUtil
-        print("La depreciacion anual es: " + str(sucess))
+        print("La depreciacion anual es: \n" + str(n1) + "/" + str(vidaUtil) + " = " + str(sucess))
+        respuesta = sucess
         sucess = sucess/12
-        print("La depreciacion mensual es: " + str(sucess))
+        print("La depreciacion mensual es: \n" + str(respuesta)+" /12 = " + str(sucess))
+        respuesta = sucess
         sucess = sucess/30
-        print("La depreciacion diaria es: " + str(sucess))
+        print("La depreciacion diaria es: \n" + str(respuesta)+"/30 = " + str(sucess))
+        
         print("Presione una tecla para continuar...")
         msvcrt.getch()
         clear()
