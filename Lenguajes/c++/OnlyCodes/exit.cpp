@@ -2,6 +2,11 @@
 
 static void pause() 
 {
-    std::cout << "\nPresione cualquier tecla para continuar";
+    std::cout << "Presione cualquier tecla para continuar\n";
     std::cin.get();
+}
+
+main()
+{
+    pause();
 }
