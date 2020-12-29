@@ -134,10 +134,13 @@ namespace Calculadora {
 			// 
 			// textBox1
 			// 
+			this->textBox1->Cursor = System::Windows::Forms::Cursors::Default;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 30));
 			this->textBox1->Location = System::Drawing::Point(12, 26);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
+			this->textBox1->ReadOnly = true;
+			this->textBox1->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
 			this->textBox1->Size = System::Drawing::Size(474, 89);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->Text = L"0";
@@ -434,6 +437,7 @@ namespace Calculadora {
 			this->Controls->Add(this->ac);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
 			this->Name = L"Main";
 			this->Text = L"Calculadora - Jesus Mendoza 1A";
 			this->Click += gcnew System::EventHandler(this, &Main::EnterNumber);
@@ -449,8 +453,7 @@ namespace Calculadora {
 	{
 		textBox1->Text = "0";
 	}
-	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
+
 	private: System::Void EnterNumber(System::Object^ sender, System::EventArgs^ e) {
 		Button^ nums = safe_cast<Button^>(sender);
 
@@ -464,6 +467,7 @@ namespace Calculadora {
 		}
 }
 private: System::Void enterFunction(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox1->Text == "") return;
 	Button^ numsFunction = safe_cast<Button^>(sender);
 	num1 = double::Parse(textBox1->Text);
 
@@ -477,6 +481,7 @@ private: System::Void punto_Click(System::Object^ sender, System::EventArgs^ e) 
 	}
 }
 private: System::Void igual_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox1->Text == "") return;
 	num2 = double::Parse(textBox1->Text);
 	if (function == "+")
 	{

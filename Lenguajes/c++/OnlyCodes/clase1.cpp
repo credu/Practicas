@@ -12,6 +12,5 @@ static void pause()
 
 main()
 {
-    printf("asd");
     pause();
 }
