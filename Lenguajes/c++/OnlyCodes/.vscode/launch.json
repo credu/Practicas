@@ -8,7 +8,7 @@
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\debug\\${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}\\..\\debug\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "C:\\MinGW\\bin",
