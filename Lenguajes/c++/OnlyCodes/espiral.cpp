@@ -29,5 +29,6 @@ int main()
         Sleep(100);
     }
     gotoxy(0, 30);
+    system("cls");
     system("pause");
 }
