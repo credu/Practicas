@@ -9,7 +9,7 @@ console.log( "Hoy es "+ today + "");
 
 if(today != lastDate) {
 
-    const { Client } = require('whatsapp-web.js');
+    const { Client, MessageMedia } = require('whatsapp-web.js');
     var schedule = require('node-schedule');
 
     const SESSION_FILE_PATH = './session.json';
@@ -50,7 +50,7 @@ if(today != lastDate) {
         'No te olvides de desayunar uwu, ten un buen dia amor ❤️',
         'Hoy podria ser tu dia, sonrie cariño :3',
         'Buenos dias hermosa',
-        'MESSAGE_UNKNOWN',
+        'Buenos días solecito',
         'MESSAGE_UNKNOWN'
     ]
 
@@ -73,8 +73,11 @@ if(today != lastDate) {
         console.log("-------");
         
         let y = Math.round(getRandomArbitrary(0, 7));
+        let audio = MessageMedia.fromFilePath('./audios/Jimin-Goodmorning.mp3')
 
-        client.sendMessage('593994040582@c.us', goodDay[y]).then((response)=>{ 
+        //client.sendMessage('593994040582@c.us', goodDay[y]).then((response)=>{ 
+
+        client.sendMessage('593994040582@c.us', audio).then((response)=>{ 
             if(response.id.fromMe) {
                 const controller = new AbortController();
                 const { signal } = controller;    

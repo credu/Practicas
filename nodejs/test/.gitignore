@@ -1,3 +1,4 @@
-*.json
+date.json
+session.json
 
 node_modules
