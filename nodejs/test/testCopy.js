@@ -44,8 +44,7 @@ if(today != lastDate) {
     });
 
     const goodDay = [
-        'Te amo, así lo leas hoy o lo leas mañana uwu',
-        'buenos días my love, el día esta tan hermoso cómo tú ❤️',
+        'buenos días my love, el día esta tan lindo cómo tú ❤️',
         'Ojala hayas descansado rico ',
         'Que tengas un excelente dia ❤️',
         'No te olvides de desayunar rico, te deseo un buen dia amor ❤️',
@@ -53,12 +52,10 @@ if(today != lastDate) {
         'Bonito dia hermosa :3',
         'Buenos días solecito',
         'Buenos días princesa',
-        'Perdona si te despierto, pero es que en cuanto abro los ojos eres lo primero en lo que pienso.',
         '¿Cómo amaneció la niña más bonita?',
         'Buenos días mi niña hermosa',
         'Buenos días cariño',
-        'Buenos días, amorcito. Espero que hayas tenido dulces sueños y que el resto del día lo pases con energía. No puedo esperar a verte esta noche.',
-        'Buenos dias my darling, como amaneciste?'
+        'Buenos días, amorcito. Espero que hayas tenido dulces sueños y que el resto del día lo pases con energía. No puedo esperar a verte esta noche.'
     ]
 
 
@@ -79,23 +76,9 @@ if(today != lastDate) {
         console.log("-------");
         console.log("-------");
         
-        //let y = Math.round(getRandomArbitrary(0, 12));
+        let y = Math.round(getRandomArbitrary(0, 12));
         //let audio = MessageMedia.fromFilePath('./audios/Jimin-Goodmorning.mp3')
 
-        let y;
-        const NUM_FILE_PATH = './num.json';
-
-        if (fs.existsSync(NUM_FILE_PATH)) {
-            y = require(NUM_FILE_PATH);
-        } else{
-            y = 0;
-            fs.writeFile(NUM_FILE_PATH, JSON.stringify(y+1), function(err){
-                if (err) {
-                    console.error(err);
-                }
-            });
-        }
-        
         client.sendMessage('593994040582@c.us', goodDay[y]).then((response)=>{ 
             if(response.id.fromMe) {
                 const controller = new AbortController();
