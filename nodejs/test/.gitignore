@@ -1,6 +1,9 @@
-date.json
-session.json
-
+# Carpetas
 node_modules
 
-media/*
+src
+
+# Json
+date.json
+session.json
+num.json
