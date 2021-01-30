@@ -2,8 +2,3 @@
 node_modules
 
 src
-
-# Json
-date.json
-session.json
-num.json
