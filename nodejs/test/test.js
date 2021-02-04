@@ -102,9 +102,12 @@ if(today != lastDate) {
 
         if (fs.existsSync(NUM_FILE_PATH)) {
             y = require(NUM_FILE_PATH);
-        } else{
+            fs.writeFile(NUM_FILE_PATH, JSON.stringify(y+1), function(err){ if (err) { console.error(err); }});
+        } 
+        else{
             y = 0;
-            fs.writeFile(NUM_FILE_PATH, JSON.stringify(y+1), function(err){ if (err) { console.error(err); }});}
+            fs.writeFile(NUM_FILE_PATH, JSON.stringify(y+1), function(err){ if (err) { console.error(err); }});
+        }
         
         client.sendMessage('593990846331@c.us', goodDay[y]).then((response)=>{ 
             if(response.id.fromMe) {
@@ -114,7 +117,7 @@ if(today != lastDate) {
                 controller.abort();
 
                 console.log("done");
-                
+                console.log(goodDay[y]);
 
                 //process.exit(1)
             }
@@ -124,5 +127,5 @@ if(today != lastDate) {
 
 else if (today == lastDate) {
     console.log("Y ya les fueron deseados los buenos dias a my love :3");
-    process.exit()
+    process.exit();
 }
