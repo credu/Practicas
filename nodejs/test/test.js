@@ -14,7 +14,7 @@ if (fs.existsSync('./src')) {
     fs.mkdir(path.join(__dirname + "\\src", 'media'), (err) => { if (err) { return console.error(err);}}); 
 }
 
-var today = new Date().getDay().toString();
+var today = new Date().getDate.toString();
 var lastDate; 
 
 try{ lastDate = require('./src/data/date.json'); }catch{}

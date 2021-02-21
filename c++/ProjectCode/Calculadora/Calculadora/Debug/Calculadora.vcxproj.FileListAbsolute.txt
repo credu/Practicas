@@ -1,5 +1,0 @@
-C:\Users\user\source\repos\Calculadora\Calculadora\Debug\Calculadora.Main.resources
-C:\Users\user\source\repos\Calculadora\Calculadora\Debug\Calculadora.vcxproj.GenerateResource.cache
-C:\Users\user\src\CosasVariadas\Lenguajes\c++\Tarea para la feria\WithInterface\Calculadora\Calculadora\Debug\Calculadora.vcxprojAssemblyReference.cache
-C:\Users\user\src\CosasVariadas\Lenguajes\c++\Tarea para la feria\WithInterface\Calculadora\Calculadora\Debug\Calculadora.Main.resources
-C:\Users\user\src\CosasVariadas\Lenguajes\c++\Tarea para la feria\WithInterface\Calculadora\Calculadora\Debug\Calculadora.vcxproj.GenerateResource.cache
