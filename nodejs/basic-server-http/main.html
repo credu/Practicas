@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR code</title>
+        <link id="favicon" rel="shortcut icon" type="image/png" href="https://web.whatsapp.com//img/favicon_c5088e888c97ad440a61d247596f88e5.png" src="/img/favicon_c5088e888c97ad440a61d247596f88e5.png">
+        <style>
+        * 
+        {
+                margin: 0;
+            padding: 0;
+        }
+        body
+        {
+                display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        img 
+        {
+                height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <script>
+        const container = document.getElementById("container");
+
+        const generateHtmlImg = (src) => {   
+            return (
+                `
+                    <img id="img" src="${src}">
+                `
+            )
+        }
+        
+        while(true) {
+            setTimeout(async () => {
+            // obtiene del servidor el src para la imagen
+            const srcQr = await fetch("url", ).then((res) => res.json());
+            // tu elemento html con la imagen
+            const htmlImg = generateHtmlImg(srcQr);
+            container.appendChild(htmlImg);
+        
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>
