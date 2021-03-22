@@ -1,0 +1,16 @@
+{
+  "name": "hide-console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "dev": "node start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "opn": "^6.0.0"
+  }
+}
