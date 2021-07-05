@@ -4,7 +4,7 @@ import java.math.*;
 /**
  * HorasSuplementarias
  */
-public class HorasSuplementarias {
+public class HorasSuplementariasExtras {
     public static void main(String[] args) {
         clearScreen();
 
@@ -40,9 +40,9 @@ public class HorasSuplementarias {
         ValorHoraOrdinaria = round(ValorHoraOrdinaria);
         System.out.println(SueldoMensual + "/" + HorasTrabajadasMes + " = " + ValorHoraOrdinaria + " Valor hora ordinaria");
 
-        ValorPorHoraExtra = ValorHoraOrdinaria * 1.5;
+        ValorPorHoraExtra = ValorHoraOrdinaria * 2;
         ValorPorHoraExtra = round(ValorPorHoraExtra);
-        System.out.println(ValorHoraOrdinaria + " * 1.5 = " + ValorPorHoraExtra + " Valor por hora extra");
+        System.out.println(ValorHoraOrdinaria + " * 2 = " + ValorPorHoraExtra + " Valor por hora extra");
 
         ValorTotalHorasExtras = ValorPorHoraExtra * HorasExtras;
         ValorTotalHorasExtras = round(ValorTotalHorasExtras);

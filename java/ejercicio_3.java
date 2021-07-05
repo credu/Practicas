@@ -1,38 +1,27 @@
-
 import java.util.Scanner;
+import java.util.regex.*;
 
 public class ejercicio_3 {
     public static void main(String[] args) {
-
-        clearScreen();
-
         Scanner input = new Scanner(System.in);
-        int n1 = getNumber(input, 1);
-        int n2 = getNumber(input, 2);
+        String name = "";
+
+        System.out.println("Ingrese su nombre completo");
+        name = input.nextLine();
+        name = upperCaseFirst(name);
+
+        System.out.println("Te llamas :" + name);
         input.close();
-
-        if (n1 < n2) {
-            System.out.println("N1 es menor que n2.");
-        } else if (n1 > n2) {
-            System.out.println("N1 es mayor que n2.");
-        } else if (n1 == n2) {
-            System.out.println("N1 es igual que n2.");
-        }
-
     }
 
-    public static int getNumber(Scanner input, int number) {
-        int n = 9999999;
-        while (true) {
-            System.out.println("Ingresa n" + number + ":");
-            try {
-                n = input.nextInt();
-                return n;
-            } catch (java.util.InputMismatchException e) {
-                System.out.println("Error: Introduce un numero valido");
-                input.nextLine();
-            }
+    public static String upperCaseFirst(String str) {
+        StringBuffer strbf = new StringBuffer();
+        Matcher match = Pattern.compile("([a-z])([a-z]*)", Pattern.CASE_INSENSITIVE).matcher(str);
+        while(match.find()) 
+        {
+            match.appendReplacement(strbf, match.group(1).toUpperCase() + match.group(2).toLowerCase());
         }
+        return match.appendTail(strbf).toString();
     }
 
     public static void clearScreen() {
