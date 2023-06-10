@@ -1,6 +1,10 @@
+const nombre = "Jesus";
+const apellido = "Mendoza";
+let valorDado = 5;
 
-const nombre = "goku";
+console.log(nombre, apellido, valorDado)
 
-const apellido = 'son';
-
-console.log(`Soy ${apellido} ${nombre}`);
+if ( true ) {
+    const nombre = "Jeampool";
+    console.log(nombre)
+}

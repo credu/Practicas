@@ -1,33 +1,18 @@
 // Desestructuracion
-// Asignacion DEsustructurante
+// Asignacion Desestructuracion
+
 const persona = {
-    nombre: 'tony',
+    nombre: "Tony",
     edad: 45,
-    clave: 'ironman'
+    clave: "Ironman"
 }
 
-const { nombre, edad, clave } = persona;
-
-console.log( nombre );
-console.log( edad );
-console.log( clave );
-
-const Context = ( {clave, nombre, edad, rango = '(Capitan)'} ) => {
-
-    // console.log(nombre, edad, rango);
-
+const useContext = ({clave, nombre, edad, rango = "Capitan"}) => {
     return {
         nombreClave: clave,
-        anios: edad,
-        latlng: {
-            lat: 14.12,
-            lng: -12.32
-        }
+        anios: edad
     }
-
 }
 
-const {nombreClave, anios, latlng: {lat, lng}} = Context( persona );
-
+const { nombreClave, anios } = useContext( persona );
 console.log(nombreClave, anios);
-console.log(lat, lng)
