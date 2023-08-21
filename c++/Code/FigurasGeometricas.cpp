@@ -36,7 +36,7 @@ int main()
         gotoxy(24, 13);printf("Seleccione una opcion:");
         gotoxy(47, 13);scanf("%d",&opc);
 
-        if(opc<1 or opc>5)
+        if(opc<1 || opc>5)
         {
             gotoxy(24, 15);printf("Por favor, ingrese una opcion valida entre [1 - 4]");
             gotoxy(24, 16);system("pause");

@@ -8,14 +8,11 @@
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\..\\Debug\\${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/Debug/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "C:\\MinGW\\bin",
             "environment": [],
             "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -23,7 +20,21 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe build active file"
+            "windows": {
+                "cwd": "C:/MinGW/bin",
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+                "preLaunchTask": "C/C++ Windows",
+            },
+            "linux": {
+                "cwd": "usr/bin",
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb",
+                "preLaunchTask": "C/C++ Linux",
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
         }
     ]
 }

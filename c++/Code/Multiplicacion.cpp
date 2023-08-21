@@ -1,5 +1,5 @@
 #include <iostream>
-#include "stdio.h"
+#include <stdio.h>
 #include <conio.h>
 
 int n, i;
