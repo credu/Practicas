@@ -1,5 +1,5 @@
 # ⚠️ Atención ⚠️
-Este código no es nada serio, todo lo que encuentre en este repositorio fue mi proceso de aprendizaje cuando aprendí a programar y tenía 16 años. Le pediré que no tome nada de esto como referencia de mi estilo de código, ya que he decidido mantener la esencia de este código tal como lo escribí en su momento.
+Este código no es nada serio, todo lo que encuentre en este repositorio fue mi proceso de aprendizaje cuando aprendí a programar y tenía 15 años. Le pediré que no tome nada de esto como referencia de mi estilo de código, ya que he decidido mantener la esencia de este código tal como lo escribí en su momento.
 
 Los únicos cambios que he decidido hacer, serán nuevos archivos `README.md` y ciertos cambios necesarios para que funcionen algunos códigos.
 
